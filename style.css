@@ -11,7 +11,7 @@
     width: 100%;
     height: 100vh;
     overflow-x: hidden;
-    background-color: red;;
+    background-color: red;
   }
 
 /*================NAVBAR================*/
@@ -36,27 +36,29 @@
 .logo,
 .search,
 .cart{
-    font-size: 2px;
+    font-size: 22px;
 }
 
 .logo {
     display: flex;
-    letter-spacing: 1px;
-    margin: 0 auto 0 38%;
+    letter-spacing: 2px;
+    margin: 0 auto 0 35%;
 }
 .logo .logo-text{
+
     font-family: 'Oswald', sans-serif;
-    font-size: 22px;
+    font-size: 26px;
     font-weight: 700;
     text-transform: uppercase;
+    /* margin-left: 10px; */
+    margin: -8px 0 auto 10px;
 }
 
-.profile img {
-    width: 35px;
-    height: 35px;
+.profile-pic img {
+    width: 30px;
+    height: 30px;
     object-fit: cover;
     border-radius: 50%;
 }
 
 /*================MAIN SECTION================*/
-  
