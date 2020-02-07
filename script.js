@@ -3,17 +3,17 @@ const left = document.querySelector(".left");
 const right = document.querySelector(".right");
 
 left.addEventListener('mouseenter', () => {
-  content.classList.add('hover-left');
+  content.classList.add('hoverLeft');
 })
 
 left.addEventListener('mouseleave', () => {
-  content.classList.remove('hover-left');
+  content.classList.remove('hoverLeft');
 })
 
 right.addEventListener('mouseenter', () => {
-  content.classList.add('hover-right');
+  content.classList.add('hoverRight');
 })
 
 right.addEventListener('mouseleave', () => {
-  content.classList.remove('hover-right');
+  content.classList.remove('hoverRight');
 })

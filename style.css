@@ -45,6 +45,25 @@
 .search,
 .cart{
     font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.fa-bars{
+    transform: scale(1.6,1);
+}
+
+.cart::after{
+    content: "";
+    font-size: .6rem;
+    text-align: center;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: #0087CC;
+    margin-left: -2px !important;
+    padding: 0;
+    border-radius: 50%;
+    transform: translateY(-5px);
 }
 
 .logo {
@@ -83,24 +102,25 @@
   }
   .split.left {
     left: 0;
-    background: #0087CC;
+    background: rgb(0,135,204);
+    background: linear-gradient(90deg, rgba(0,135,204,1) 0%, rgb(20, 148, 212) 100%);
   }
   .split.right {
     right: 0;
-    background: #FFA109;
+    background: rgb(255,161,9);
+background: linear-gradient(90deg, rgba(255,161,9,1) 0%, rgba(203,129,10,1) 100%);
   }
   
-  .hover-left .split.left,
-  .hover-right .split.right {
+  .hoverLeft .split.left,
+  .hoverRight .split.right {
     width: 65%;
   }
   
-  .hover-left .split.right
-  .hover-right .split.left {
+  .hoverLeft .split.right,
+  .hoverRight .split.left {
     width: 35%;
   }
   
-
   .split.left .fa-chevron-left,
   .split.right .fa-chevron-right{
       position: absolute;
@@ -113,8 +133,6 @@
   .split.left .fa-chevron-left{
     right: 0;
   }
-
-
 
   .skateboard {
     position: absolute;
@@ -135,13 +153,19 @@
   
   .text {
     position: absolute;
-    width: 85%;
+    width: 80vh;
+    max-width: 600px;
+    margin-left: 2rem;
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     transition: all 1s cubic-bezier(.87, .76, .33, .98);
   }
   
+.hoverLeft .split.right .text{
+    margin-left: 3rem;
+}
+
   .text .title {
     color: #fff;
     font-size: 1rem;
