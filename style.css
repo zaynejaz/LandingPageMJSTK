@@ -1,0 +1,20 @@
+/* DEFAULTS
+=========================== */
+* {
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box; */
+  }
+  
+  body {
+    font-family: 'Montserrat';
+    color: #fff;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+  }
+  
+  i.fas {
+    font-size: 25px;
+  }
+  
