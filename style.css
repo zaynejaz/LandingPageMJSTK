@@ -173,18 +173,18 @@
     transform: scale(2.5,1);
   }
   
-  .hover-left .split.left .text {
+  .hoverLeft .split.left .text {
     transform: translate(-40%, -50%);
   }
   
-  .hover-left .split.right .text {
+  .hoverLeft .split.right .text {
     transform: translate(-40%, -50%);
   }
   
-  .hover-right .split.right .text {
+  .hoverRight .split.right .text {
     transform: translate(-60%, -50%);
   }
   
-  .hover-right .split.left .text {
+  .hoverRight .split.left .text {
     transform: translate(-45%, -50%);
   }
