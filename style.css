@@ -189,4 +189,44 @@
     transform: translate(-45%, -50%);
   }
 
-/*================MOVEMENT SECTION================*/
+/*================PAGE-NAVIGATION SELECTOR================*/
+.page-chevron {
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    right: 0;
+    height: 80px;
+    align-items: center;
+  }
+  
+  .page-indicator {
+    font-weight: 400;
+    padding: 0 20px;
+  }
+  
+  .page-indicator span::after {
+    content: "";
+    display: inline-block;
+    width: 100px;
+    margin: 0 10px;
+    border: .2px solid #fff;
+
+    transform: translateY(-5px);
+  }
+  
+  .chevronLR {
+    padding: 0 2.5rem;
+  }
+  
+  .chevronLR .fa-chevron-left,
+  .chevronLR .fa-chevron-right{
+    font-size: 1.4rem;
+  }
+
+  .chevronLR .fa-chevron-left{
+      margin-right: 1.3rem;
+  }
+
+  .chevronLR .fa-chevron-right{
+    margin-right: 2rem;
+}
