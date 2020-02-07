@@ -1,3 +1,11 @@
+/*================FONTS================*/
+
+@font-face {
+    font-family: 'Exb FLF';
+    src: url('/font/SansSerifExbFLF.ttf');
+  }
+  
+
 /*================DEFAULTS================*/
 * {
     padding: 0;
@@ -6,12 +14,12 @@
   }
   
   body {
-    font-family: 'Montserrat';
-    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px !important;
+    color: #fff !important;
     width: 100%;
     height: 100vh;
     overflow-x: hidden;
-    background-color: red;
   }
 
 /*================NAVBAR================*/
@@ -36,22 +44,20 @@
 .logo,
 .search,
 .cart{
-    font-size: 22px;
+    font-size: 1.2rem;
 }
 
 .logo {
     display: flex;
-    letter-spacing: 2px;
     margin: 0 auto 0 35%;
 }
 .logo .logo-text{
-
-    font-family: 'Oswald', sans-serif;
-    font-size: 26px;
+    font-family: 'Exb FLF', sans-serif;
+    font-size: 1.5rem;
     font-weight: 700;
     text-transform: uppercase;
-    /* margin-left: 10px; */
-    margin: -8px 0 auto 10px;
+    letter-spacing: 2px;
+    margin: 20px 0 auto 10px;
 }
 
 .profile-pic img {
@@ -62,3 +68,123 @@
 }
 
 /*================MAIN SECTION================*/
+.main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .split {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    transition: .8s all cubic-bezier(.87, .76, .33, .98);
+    overflow: hidden;
+  }
+  .split.left {
+    left: 0;
+    background: #0087CC;
+  }
+  .split.right {
+    right: 0;
+    background: #FFA109;
+  }
+  
+  .hover-left .split.left,
+  .hover-right .split.right {
+    width: 80%;
+  }
+  
+  .hover-left .split.right
+  .hover-right .split.left {
+    width: 20%;
+  }
+  
+   
+  .skateboard {
+    width: 85%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .shoes {
+    width: 120%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .text {
+    position: absolute;
+    width: 600px;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 1s cubic-bezier(.87, .76, .33, .98);
+  }
+  
+  .text .title {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 200;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .text .subtitle {
+    font-family: 'Exb FLF', sans-serif;
+    color: #fff;
+    font-size: 5rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    line-height: 1;
+    margin-top: 1.75rem;
+    margin-bottom: -30px !important;
+  }
+  
+  .text .desc {
+    font-size: .8rem;
+    color: #fff;
+    font-weight: 300;
+    line-height: 2;
+    margin: 10px 0 30px 0;
+    width: 400px;
+  }
+  
+  .text .button {
+    color: #fff;
+    font-size: .8rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    border: 2px solid #fff;
+    background: transparent;
+    padding: 13px 30px 15px 30px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 100px;
+  }
+
+  .text .button .fa-long-arrow-alt-right{    
+    margin-left: 25px;
+    transform: scale(2.5,1);
+  }
+  
+  .hover-left .split.left .text {
+    transform: translate(-40%, -50%);
+  }
+  
+  .hover-left .split.right .text {
+    transform: translate(-40%, -50%);
+  }
+  
+  .hover-right .split.right .text {
+    transform: translate(-60%, -50%);
+  }
+  
+  .hover-right .split.left .text {
+    transform: translate(-45%, -50%);
+  }
